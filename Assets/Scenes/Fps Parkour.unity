@@ -2018,6 +2018,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2002514946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8301348219256675485, guid: d23a71d629ca2cb428e58efdcf5d4c1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1672633554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2002514947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002514946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e412c29770365ec4bbc3f8251ca5fd39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoney: 10
 --- !u!1 &2137167442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,11 +2136,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1934418667}
     m_Modifications:
-    - target: {fileID: 2353447734035635262, guid: fe134bcb1fe9ca64abf2e61c47ca93ad,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 3401680548102936193, guid: fe134bcb1fe9ca64abf2e61c47ca93ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2182,8 +2196,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: CajaPrefab
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1637625752164572743, guid: fe134bcb1fe9ca64abf2e61c47ca93ad, type: 3}
+    - target: {fileID: 5833265064065002784, guid: fe134bcb1fe9ca64abf2e61c47ca93ad,
+        type: 3}
+      propertyPath: dineroManager
+      value: 
+      objectReference: {fileID: 2002514947}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe134bcb1fe9ca64abf2e61c47ca93ad, type: 3}
 --- !u!1001 &1777399823665074850
 PrefabInstance:
