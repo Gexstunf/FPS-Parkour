@@ -9,7 +9,6 @@ public class DineroManager : MonoBehaviour
     
     public void UpdateMoney(float amount)
     {
-
         if (playerMoney + amount <= 0)
         {
             // impedir compra
