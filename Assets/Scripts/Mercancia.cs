@@ -16,9 +16,12 @@ public class Mercancia : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            dineroManager.UpdateMoney(-precio);
-            Destroy(gameObject);
-            //restar precio / puntos
+            if (dineroManager.UpdateMoney(-precio))
+            {
+                Destroy(gameObject);
+                //restar precio / puntos
+            };
+            
         }
     }
 }

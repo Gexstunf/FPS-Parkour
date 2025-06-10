@@ -7,15 +7,17 @@ public class DineroManager : MonoBehaviour
     public float playerMoney;
 
     
-    public void UpdateMoney(float amount)
+    public bool UpdateMoney(float amount)
     {
         if (playerMoney + amount <= 0)
         {
             // impedir compra
+            return false;
         }
         else
         {
-        playerMoney += amount;
+            playerMoney += amount;
+            return true;
         }
     }
 }
